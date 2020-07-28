@@ -39,14 +39,26 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-4",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 45.0, 585.0, 105.0, 60.0 ],
+					"presentation_linecount" : 4,
+					"text" : "^ exponential multipliers for 5 different playback speeds"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-15",
 					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 494.0, 360.0, 106.0, 33.0 ],
-					"presentation_linecount" : 4,
-					"text" : "< increase or decreas speed"
+					"text" : "< increase or decrease speed"
 				}
 
 			}
@@ -57,7 +69,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 231.5, 420.0, 35.0, 22.0 ],
+					"patching_rect" : [ 231.5, 390.0, 35.0, 22.0 ],
 					"text" : "abs~"
 				}
 
@@ -176,7 +188,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 189.5, 315.0, 36.0, 37.0 ]
+					"patching_rect" : [ 150.0, 315.0, 69.5, 72.0 ]
 				}
 
 			}
@@ -200,7 +212,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 66.0, 135.0, 70.0, 22.0 ],
-					"text" : "loadmess 8"
+					"text" : "loadmess 4"
 				}
 
 			}
@@ -211,7 +223,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "float", "int", "int" ],
-					"patching_rect" : [ 45.0, 390.0, 61.0, 22.0 ],
+					"patching_rect" : [ 45.0, 405.0, 61.0, 22.0 ],
 					"text" : "dspstate~"
 				}
 
@@ -271,7 +283,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 420.0, 115.0, 22.0 ],
+					"patching_rect" : [ 45.0, 435.0, 115.0, 22.0 ],
 					"text" : "spreadinclusive -2 2"
 				}
 
@@ -283,7 +295,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 45.0, 450.0, 108.0, 22.0 ],
+					"patching_rect" : [ 45.0, 465.0, 108.0, 22.0 ],
 					"text" : "mc.sig~ @chans 5"
 				}
 
@@ -348,11 +360,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-116",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 495.0, 420.0, 105.0, 47.0 ],
+					"patching_rect" : [ 644.0, 450.0, 150.0, 33.0 ],
 					"text" : "< add 1 so speed always increases from x1 to x2"
 				}
 
@@ -420,11 +432,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-105",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 292.75, 135.0, 136.25, 20.0 ],
-					"text" : "load a loop"
+					"patching_rect" : [ 292.0, 124.0, 136.25, 33.0 ],
+					"text" : "load a loop and turn audio on below"
 				}
 
 			}
@@ -507,7 +520,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 494.0, 720.0, 107.0, 22.0 ],
+					"patching_rect" : [ 494.0, 765.0, 107.0, 22.0 ],
 					"text" : "mc.scale~ 1 -1 0 1"
 				}
 
@@ -519,7 +532,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 494.0, 690.0, 54.0, 22.0 ],
+					"patching_rect" : [ 494.0, 735.0, 54.0, 22.0 ],
 					"text" : "mc.cos~"
 				}
 
@@ -852,15 +865,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
-					"order" : 1,
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-73", 0 ],
-					"order" : 0,
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -912,6 +916,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-38", 0 ],
+					"order" : 1,
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-73", 0 ],
+					"order" : 0,
 					"source" : [ "obj-14", 0 ]
 				}
 
