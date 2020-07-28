@@ -1,4 +1,4 @@
-# risset-rhythm-effect
+# Risset Rhythm Effect
 
 This is a version of the endlessly speeding drumloop, also known as the Risset Rhythm Effect. This effect is created and demonstrated by Jean-Claude Risset, a french composer who also created the Shepard-Risset Glissando.
 
