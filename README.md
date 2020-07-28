@@ -10,14 +10,14 @@ The voices have a part of a gain curve applied to them (the complete curve is a 
 
 # Further Reading
 
-[Dan Stowel - Scheduling and Composing with Risset Eternal Accelerando Rhythms](https://pdfs.semanticscholar.org/2de1/e9505baf81121d1622e0470d09cc48577f3a.pdf?_ga=2.215081439.912473153.1595938513-10364231.1595938513)
+[Dan Stowell - Scheduling and Composing with Risset Eternal Accelerando Rhythms](https://pdfs.semanticscholar.org/2de1/e9505baf81121d1622e0470d09cc48577f3a.pdf?_ga=2.215081439.912473153.1595938513-10364231.1595938513)
 
 # Images
 
 ![](figure-1.png)
 
-[*Diagrammatic representation of a Risset accelerando. from Dan Stowel paper*](https://pdfs.semanticscholar.org/2de1/e9505baf81121d1622e0470d09cc48577f3a.pdf?_ga=2.215081439.912473153.1595938513-10364231.1595938513)
+[*Diagrammatic representation of a Risset accelerando. from Dan Stowell paper*](https://pdfs.semanticscholar.org/2de1/e9505baf81121d1622e0470d09cc48577f3a.pdf?_ga=2.215081439.912473153.1595938513-10364231.1595938513)
 
 ![](figure-2.png)
 
-[*Diagrammatic representation of a Risset accelerando. from Dan Stowel paper*](https://pdfs.semanticscholar.org/2de1/e9505baf81121d1622e0470d09cc48577f3a.pdf?_ga=2.215081439.912473153.1595938513-10364231.1595938513)
+[*Diagrammatic representation of a Risset accelerando. from Dan Stowell paper*](https://pdfs.semanticscholar.org/2de1/e9505baf81121d1622e0470d09cc48577f3a.pdf?_ga=2.215081439.912473153.1595938513-10364231.1595938513)
