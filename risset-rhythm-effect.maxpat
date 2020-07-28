@@ -39,13 +39,24 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "int" ],
+					"patching_rect" : [ 463.0, 390.0, 29.5, 22.0 ],
+					"text" : "t b i"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-4",
 					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 585.0, 105.0, 60.0 ],
-					"presentation_linecount" : 4,
+					"patching_rect" : [ 45.0, 585.0, 106.0, 60.0 ],
 					"text" : "^ exponential multipliers for 5 different playback speeds"
 				}
 
@@ -53,12 +64,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-15",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 494.0, 360.0, 106.0, 33.0 ],
-					"text" : "< increase or decrease speed"
+					"patching_rect" : [ 530.5, 360.0, 151.0, 20.0 ],
+					"text" : "< speeding / slowing down"
 				}
 
 			}
@@ -376,7 +386,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 494.0, 315.0, 64.0, 33.0 ],
+					"patching_rect" : [ 530.5, 315.0, 64.0, 33.0 ],
 					"text" : "< resync phasors"
 				}
 
@@ -520,7 +530,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 494.0, 765.0, 107.0, 22.0 ],
+					"patching_rect" : [ 494.0, 720.0, 107.0, 22.0 ],
 					"text" : "mc.scale~ 1 -1 0 1"
 				}
 
@@ -532,7 +542,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 494.0, 735.0, 54.0, 22.0 ],
+					"patching_rect" : [ 494.0, 690.0, 54.0, 22.0 ],
 					"text" : "mc.cos~"
 				}
 
@@ -878,7 +888,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 1 ],
+					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -1125,6 +1135,21 @@
 				"patchline" : 				{
 					"destination" : [ "obj-65", 1 ],
 					"source" : [ "obj-59", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 1 ],
+					"source" : [ "obj-6", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"midpoints" : [ 472.5, 422.0, 508.5, 422.0, 508.5, 304.0, 472.5, 304.0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}
